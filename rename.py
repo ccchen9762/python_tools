@@ -1,7 +1,8 @@
 import os
-from xml.etree.ElementTree import tostring
 
-path = ""
+rawPath = r""
+path = rawPath.replace('\\', '\\\\')
+
 files = os.listdir(path)
 
 for i in range(len(files)):
